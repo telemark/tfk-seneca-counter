@@ -1,0 +1,43 @@
+{
+  "name": "tfk-seneca-counter",
+  "version": "1.0.0",
+  "description": "Microservice for live counter",
+  "license": "MIT",
+  "author": {
+    "name": "Geir Gåsodden",
+    "email": "geir.gasodden@pythonia.no",
+    "url": "https://github.com/zrrrzzt"
+  },
+  "bugs": {
+    "url": "https://github.com/telemark/tfk-seneca-counter/issues"
+  },
+  "homepage": "https://github.com/telemark/tfk-seneca-counter",
+  "main": "service.js",
+  "engines": {
+    "node": ">=4.4.7"
+  },
+  "scripts": {
+    "test": "standard && nsp check && tap --reporter=spec test/*.js",
+    "coverage": "tap test/*.js --coverage",
+    "coveralls": "tap --cov --coverage-report=lcov test/*.js && cat coverage/lcov.info | coveralls",
+    "start": "node service.js",
+    "isolated": "TFK_SENECA_COUNTER_ISOLATED=1 node service.js",
+    "setup": "npm install && node setup.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/telemark/tfk-seneca-counter"
+  },
+  "devDependencies": {
+    "coveralls": "2.11.12",
+    "nsp": "2.6.1",
+    "standard": "7.1.2",
+    "tap": "6.3.0"
+  },
+  "dependencies": {
+    "seneca": "2.1.0",
+    "seneca-balance-client": "0.5.0",
+    "seneca-counter-firebase": "1.0.1",
+    "seneca-mesh": "0.8.0"
+  }
+}
