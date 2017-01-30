@@ -1,6 +1,6 @@
  {
   "name": "tfk-seneca-counter",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Microservice for live counter",
   "license": "MIT",
   "author": {
