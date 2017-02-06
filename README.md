@@ -1,4 +1,6 @@
 # tfk-seneca-counter
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/telemark/tfk-seneca-counter.svg)](https://greenkeeper.io/)
 Microservice for live counter
 
 ## Usage
